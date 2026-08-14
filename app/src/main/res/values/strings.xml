@@ -22,3 +22,30 @@
     <string name="display_fit">Fit</string>
     <string name="lock_orientation">Lock orientation</string>
 </resources>
+    <!-- Dialog strings -->
+    <string name="dialog_url_hint">Enter video URL</string>
+    <string name="dialog_add_url_title">Add URL</string>
+    <string name="dialog_add">Add</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="invalid_url">Invalid URL</string>
+    
+    <!-- Display modes -->
+    <string name="display_fill">Fill</string>
+    <string name="display_zoom">Zoom</string>
+    
+    <!-- Speed control -->
+    
+    <!-- Dialog strings -->
+    <string name="dialog_url_hint">Enter video URL</string>
+    <string name="dialog_add_url_title">Add URL</string>
+    <string name="dialog_add">Add</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="invalid_url">Invalid URL</string>
+    
+    <!-- Display modes -->
+    <string name="display_fill">Fill</string>
+    <string name="display_zoom">Zoom</string>
+    
+    <!-- Speed control -->
+    <string name="speed_control">Speed</string>
+</resources>

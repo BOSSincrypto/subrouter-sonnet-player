@@ -7,4 +7,7 @@
     <string name="player_loading">Loading...</string>
     <string name="player_error_title">Playback Error</string>
     <string name="player_retry">Retry</string>
+    <string name="player_error">Unable to play video</string>
+    <string name="cd_more">More options</string>
+    <string name="cd_back">Back</string>
 </resources>

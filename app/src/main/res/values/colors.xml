@@ -23,3 +23,12 @@
     <!-- Launcher icon -->
     <color name="ic_launcher_background">#000000</color>
 </resources>
+    
+    <!-- Text colors -->
+    <color name="text_primary">#DE000000</color>
+    <color name="text_secondary">#8A000000</color>
+    
+    <!-- Text colors -->
+    <color name="text_primary">#DE000000</color>
+    <color name="text_secondary">#8A000000</color>
+</resources>

@@ -13,6 +13,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import java.io.File
 import java.text.SimpleDateFormat
+import com.sonnet.player.BuildConfig
 import java.util.*
 import kotlin.math.roundToInt
 

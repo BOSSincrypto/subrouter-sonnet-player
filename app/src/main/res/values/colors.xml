@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Primary colors -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="gray">#FF808080</color>
+    <color name="light_gray">#FFE0E0E0</color>
+    
+    <!-- Player colors -->
+    <color name="player_background">#000000</color>
+    <color name="player_controls_background">#CC000000</color>
+    <color name="player_text">#FFFFFF</color>
+    <color name="player_icon">#FFFFFF</color>
+    <color name="player_progress">#FFFFFF</color>
+    <color name="player_secondary_text">#B3FFFFFF</color>
+    
+    <!-- Launcher icon -->
+    <color name="ic_launcher_background">#000000</color>
 </resources>
-<resources><color name="ic_launcher_background">#000000</color></resources>

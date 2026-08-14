@@ -320,7 +320,7 @@ class PlayerActivity : AppCompatActivity() {
             .show()
     }
 
-    private fun enterPictureInPictureMode() {
+    private override fun enterPictureInPictureMode() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             if (packageManager.hasSystemFeature(PackageManager.FEATURE_PICTURE_IN_PICTURE)) {
                 val params = PictureInPictureParams.Builder()

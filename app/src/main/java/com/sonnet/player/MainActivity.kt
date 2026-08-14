@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
         localAdapter = VideoAdapter(localVideos) { video ->
             playVideo(video)
         }
-        binding.binding.localRecyclerView.apply {
+        binding.localRecyclerView.apply {
             layoutManager = LinearLayoutManager(this@MainActivity)
             adapter = localAdapter
             setHasFixedSize(false)
@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
         recentAdapter = VideoAdapter(recentVideos) { video ->
             playVideo(video)
         }
-        binding.binding.recentRecyclerView.apply {
+        binding.recentRecyclerView.apply {
             layoutManager = LinearLayoutManager(this@MainActivity)
             adapter = recentAdapter
             setHasFixedSize(false)
@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupSearchBar() {
-        binding.binding.searchBar.addTextChangedListener(object : TextWatcher {
+        binding.searchBar.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
             override fun afterTextChanged(s: Editable?) {
@@ -152,7 +152,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun showPermissionDeniedMessage() {
         binding.emptyState.visibility = View.VISIBLE
-        binding.binding.localRecyclerView.visibility = View.GONE
+        binding.localRecyclerView.visibility = View.GONE
     }
 
     private fun loadLocalVideos() {
@@ -244,10 +244,10 @@ class MainActivity : AppCompatActivity() {
     private fun updateRecentSection() {
         if (recentVideos.isEmpty()) {
             binding.recentTitle.visibility = View.GONE
-            binding.binding.recentRecyclerView.visibility = View.GONE
+            binding.recentRecyclerView.visibility = View.GONE
         } else {
             binding.recentTitle.visibility = View.VISIBLE
-            binding.binding.recentRecyclerView.visibility = View.VISIBLE
+            binding.recentRecyclerView.visibility = View.VISIBLE
             recentAdapter.notifyDataSetChanged()
         }
     }
@@ -270,10 +270,10 @@ class MainActivity : AppCompatActivity() {
     private fun updateEmptyState() {
         if (localVideos.isEmpty() && recentVideos.isEmpty()) {
             binding.emptyState.visibility = View.VISIBLE
-            binding.binding.localRecyclerView.visibility = View.GONE
+            binding.localRecyclerView.visibility = View.GONE
         } else {
             binding.emptyState.visibility = View.GONE
-            binding.binding.localRecyclerView.visibility = View.VISIBLE
+            binding.localRecyclerView.visibility = View.VISIBLE
         }
     }
 

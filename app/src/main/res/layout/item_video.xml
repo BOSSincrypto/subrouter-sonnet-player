@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/video_item_height"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="@dimen/spacing_sm">
+
+    <!-- Thumbnail -->
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="@dimen/video_thumbnail_width"
+        android:layout_height="@dimen/video_thumbnail_height"
+        android:background="@color/text_secondary"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <!-- Duration badge -->
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/duration_badge_background"
+        android:paddingStart="4dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/text_primary_dark"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@id/thumbnail"
+        app:layout_constraintEnd_toEndOf="@id/thumbnail"
+        tools:text="05:32" />
+
+    <!-- Video info -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_md"
+        android:layout_marginEnd="@dimen/spacing_sm"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/menuButton"
+        app:layout_constraintStart_toEndOf="@id/thumbnail"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_size_body"
+            android:textStyle="bold"
+            tools:text="Sample Video Title That Can Be Very Long" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_size_caption"
+            tools:text="1.2 GB • 1920x1080" />
+
+    </LinearLayout>
+
+    <!-- Menu button -->
+    <ImageButton
+        android:id="@+id/menuButton"
+        android:layout_width="@dimen/touch_target_min"
+        android:layout_height="@dimen/touch_target_min"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/cd_more"
+        android:src="@android:drawable/ic_menu_more"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/text_secondary" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Top control bar -->
+    <LinearLayout
+        android:id="@+id/topControlBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/controls_gradient_top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_sm"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="@dimen/player_control_size"
+            android:layout_height="@dimen/player_control_size"
+            android:contentDescription="@string/cd_back"
+            android:src="@android:drawable/ic_menu_revert"
+            style="@style/Widget.SonnetPlayer.PlayerButton" />
+
+        <TextView
+            android:id="@+id/videoTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingStart="@dimen/spacing_sm"
+            android:paddingEnd="@dimen/spacing_sm"
+            android:textColor="@color/player_controls_tint"
+            android:textSize="@dimen/text_size_subtitle"
+            tools:text="Video Title" />
+
+        <ImageButton
+            android:id="@+id/moreButton"
+            android:layout_width="@dimen/player_control_size"
+            android:layout_height="@dimen/player_control_size"
+            android:contentDescription="@string/cd_more"
+            android:src="@android:drawable/ic_menu_more"
+            style="@style/Widget.SonnetPlayer.PlayerButton" />
+
+    </LinearLayout>
+
+    <!-- Center play/pause button -->
+    <ImageButton
+        android:id="@+id/centerPlayPause"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="@drawable/player_button_background"
+        android:contentDescription="@string/cd_play_pause"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/ic_media_play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/player_controls_tint" />
+
+    <!-- Bottom control bar -->
+    <LinearLayout
+        android:id="@+id/bottomControlBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/controls_gradient_bottom"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_sm"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Playback controls -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/rewindButton"
+                android:layout_width="@dimen/player_control_size"
+                android:layout_height="@dimen/player_control_size"
+                android:contentDescription="@string/cd_rewind"
+                android:src="@android:drawable/ic_media_rew"
+                style="@style/Widget.SonnetPlayer.PlayerButton" />
+
+            <ImageButton
+                android:id="@+id/playPauseButton"
+                android:layout_width="@dimen/player_control_size"
+                android:layout_height="@dimen/player_control_size"
+                android:layout_marginStart="@dimen/spacing_md"
+                android:layout_marginEnd="@dimen/spacing_md"
+                android:contentDescription="@string/cd_play_pause"
+                android:src="@android:drawable/ic_media_play"
+                style="@style/Widget.SonnetPlayer.PlayerButton" />
+
+            <ImageButton
+                android:id="@+id/forwardButton"
+                android:layout_width="@dimen/player_control_size"
+                android:layout_height="@dimen/player_control_size"
+                android:contentDescription="@string/cd_forward"
+                android:src="@android:drawable/ic_media_ff"
+                style="@style/Widget.SonnetPlayer.PlayerButton" />
+
+        </LinearLayout>
+
+        <!-- Progress bar with time -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_sm"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/currentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:textColor="@color/player_controls_tint"
+                android:textSize="@dimen/text_size_caption"
+                tools:text="00:00" />
+
+            <androidx.media3.ui.DefaultTimeBar
+                android:id="@+id/progressBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_sm"
+                android:layout_marginEnd="@dimen/spacing_sm"
+                android:layout_weight="1"
+                app:played_color="@color/player_progress"
+                app:scrubber_color="@color/player_progress"
+                app:unplayed_color="@color/player_progress_background" />
+
+            <TextView
+                android:id="@+id/totalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:textColor="@color/player_controls_tint"
+                android:textSize="@dimen/text_size_caption"
+                tools:text="00:00" />
+
+        </LinearLayout>
+
+        <!-- Secondary controls -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_sm"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/speedButton"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="0dp"
+                android:text="@string/speed_1x"
+                android:textColor="@color/player_controls_tint"
+                app:icon="@android:drawable/ic_media_play"
+                app:iconTint="@color/player_controls_tint" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/lockButton"
+                android:layout_width="@dimen/player_control_size"
+                android:layout_height="@dimen/player_control_size"
+                android:contentDescription="@string/lock_orientation"
+                android:src="@android:drawable/ic_lock_idle_lock"
+                style="@style/Widget.SonnetPlayer.PlayerButton" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/displayModeButton"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_sm"
+                android:minWidth="0dp"
+                android:text="@string/display_fit"
+                android:textColor="@color/player_controls_tint"
+                app:icon="@android:drawable/ic_menu_crop"
+                app:iconTint="@color/player_controls_tint" />
+
+            <ImageButton
+                android:id="@+id/fullscreenButton"
+                android:layout_width="@dimen/player_control_size"
+                android:layout_height="@dimen/player_control_size"
+                android:layout_marginStart="@dimen/spacing_sm"
+                android:contentDescription="@string/cd_fullscreen"
+                android:src="@android:drawable/ic_menu_crop"
+                style="@style/Widget.SonnetPlayer.PlayerButton" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Playback Settings -->
+    <PreferenceCategory
+        android:title="Playback"
+        android:key="category_playback">
+
+        <ListPreference
+            android:key="pref_default_speed"
+            android:title="Default Playback Speed"
+            android:summary="%s"
+            android:entries="@array/speed_entries"
+            android:entryValues="@array/speed_values"
+            android:defaultValue="1.0"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            android:key="pref_resume_playback"
+            android:title="Resume Playback"
+            android:summary="Continue from last position"
+            android:defaultValue="true" />
+
+        <ListPreference
+            android:key="pref_seek_amount"
+            android:title="Seek Amount"
+            android:summary="Skip duration when seeking"
+            android:entries="@array/seek_entries"
+            android:entryValues="@array/seek_values"
+            android:defaultValue="10"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            android:key="pref_gestures_enabled"
+            android:title="Gestures"
+            android:summary="Swipe to adjust volume and brightness"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <!-- Display Settings -->
+    <PreferenceCategory
+        android:title="Display"
+        android:key="category_display">
+
+        <ListPreference
+            android:key="pref_display_mode"
+            android:title="Default Display Mode"
+            android:summary="%s"
+            android:entries="@array/display_mode_entries"
+            android:entryValues="@array/display_mode_values"
+            android:defaultValue="fit"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            android:key="pref_hardware_accel"
+            android:title="Hardware Acceleration"
+            android:summary="Better performance but may cause issues on some devices"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <!-- Storage Settings -->
+    <PreferenceCategory
+        android:title="Storage"
+        android:key="category_storage">
+
+        <ListPreference
+            android:key="pref_cache_size"
+            android:title="Cache Size"
+            android:summary="Maximum cache size for playback"
+            android:entries="@array/cache_size_entries"
+            android:entryValues="@array/cache_size_values"
+            android:defaultValue="50"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            android:key="pref_auto_cleanup"
+            android:title="Auto Cleanup"
+            android:summary="Automatically remove old history entries"
+            android:defaultValue="true" />
+
+        <ListPreference
+            android:key="pref_history_limit"
+            android:title="History Limit"
+            android:summary="Maximum number of videos in history"
+            android:entries="@array/history_limit_entries"
+            android:entryValues="@array/history_limit_values"
+            android:defaultValue="100"
+            android:dependency="pref_auto_cleanup"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <!-- About -->
+    <PreferenceCategory
+        android:title="About"
+        android:key="category_about">
+
+        <Preference
+            android:key="pref_version"
+            android:title="Version"
+            android:summary="1.0"
+            android:selectable="false" />
+
+        <Preference
+            android:key="pref_clear_history"
+            android:title="Clear History"
+            android:summary="Remove all playback history" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

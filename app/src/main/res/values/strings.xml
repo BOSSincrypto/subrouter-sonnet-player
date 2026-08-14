@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sonnet Player</string>
+    <string name="video_loading">Loading video...</string>
+    <string name="video_error">Error playing video</string>
+    <string name="permission_denied">Storage permission is required to play videos</string>
+</resources>

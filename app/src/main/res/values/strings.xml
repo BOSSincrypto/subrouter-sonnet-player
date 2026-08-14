@@ -29,4 +29,6 @@
     <string name="dialog_add">Add</string>
     <string name="dialog_cancel">Cancel</string>
     <string name="invalid_url">Invalid URL</string>
+    <string name="pip_mode">Picture-in-Picture</string>
+    <string name="settings">Settings</string>
 </resources>

@@ -27,3 +27,5 @@
     <!-- Launcher icon -->
     <color name="ic_launcher_background">#000000</color>
 </resources>
+    <color name="player_controls_tint">#FFFFFF</color>
+</resources>

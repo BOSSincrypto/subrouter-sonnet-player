@@ -21,3 +21,19 @@
         <item name="android:windowNoTitle">true</item>
     </style>
 </resources>
+
+    <!-- Player Button Style -->
+    <style name="Widget.SonnetPlayer.PlayerButton" parent="Widget.AppCompat.ImageButton">
+        <item name="android:background">@drawable/player_button_background</item>
+        <item name="android:tint">@color/player_controls_tint</item>
+        <item name="android:layout_width">@dimen/player_control_size</item>
+        <item name="android:layout_height">@dimen/player_control_size</item>
+
+    <!-- Player Button Style -->
+    <style name="Widget.SonnetPlayer.PlayerButton" parent="Widget.AppCompat.ImageButton">
+        <item name="android:background">@drawable/player_button_background</item>
+        <item name="android:tint">@color/player_controls_tint</item>
+        <item name="android:layout_width">@dimen/player_control_size</item>
+        <item name="android:layout_height">@dimen/player_control_size</item>
+    </style>
+</resources>

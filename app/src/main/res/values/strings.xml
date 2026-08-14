@@ -11,3 +11,15 @@
     <string name="cd_more">More options</string>
     <string name="cd_back">Back</string>
 </resources>
+    <string name="cd_play_pause">Play or pause</string>
+    <string name="cd_skip_previous">Skip to previous</string>
+    <string name="cd_skip_next">Skip to next</string>
+    <string name="cd_rewind">Rewind</string>
+    <string name="cd_fast_forward">Fast forward</string>
+    <string name="cd_play_pause">Play or pause</string>
+    <string name="cd_skip_previous">Skip to previous</string>
+    <string name="cd_skip_next">Skip to next</string>
+    <string name="cd_rewind">Rewind</string>
+    <string name="cd_fast_forward">Fast forward</string>
+    <string name="cd_settings">Settings</string>
+</resources>

@@ -6,6 +6,11 @@
     <color name="gray">#FF808080</color>
     <color name="light_gray">#FFE0E0E0</color>
     
+    <!-- Text colors -->
+    <color name="text_primary">#DE000000</color>
+    <color name="text_secondary">#8A000000</color>
+    <color name="text_primary_dark">#FFFFFF</color>
+    
     <!-- Player colors -->
     <color name="player_background">#000000</color>
     <color name="player_controls_background">#CC000000</color>
@@ -17,18 +22,8 @@
     <!-- UI colors -->
     <color name="overlay_dark">#CC000000</color>
     <color name="accent">#FF2196F3</color>
-    <color name="text_primary_dark">#FFFFFF</color>
     <color name="error">#FFFF5252</color>
     
     <!-- Launcher icon -->
     <color name="ic_launcher_background">#000000</color>
-</resources>
-    
-    <!-- Text colors -->
-    <color name="text_primary">#DE000000</color>
-    <color name="text_secondary">#8A000000</color>
-    
-    <!-- Text colors -->
-    <color name="text_primary">#DE000000</color>
-    <color name="text_secondary">#8A000000</color>
 </resources>

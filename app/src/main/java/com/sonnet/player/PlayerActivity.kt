@@ -227,7 +227,7 @@ class PlayerActivity : AppCompatActivity() {
 
     private fun showSpeedMenu() {
         val speedLabels = arrayOf("0.25x", "0.5x", "0.75x", "1x", "1.25x", "1.5x", "1.75x", "2x")
-        val currentIndex = SPEED_OPTIONS.indexOf(currentSpeed)
+        val currentIndex = SPEED_OPTIONS.indexOfFirst { it == currentSpeed }
 
         MaterialAlertDialogBuilder(this)
             .setTitle(R.string.speed_control)

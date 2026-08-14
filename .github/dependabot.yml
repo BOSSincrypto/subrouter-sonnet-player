@@ -11,9 +11,9 @@ updates:
       timezone: "UTC"
     open-pull-requests-limit: 10
     reviewers:
-      - "octocat"
+      - "BOSSincrypto"
     assignees:
-      - "octocat"
+      - "BOSSincrypto"
     commit-message:
       prefix: "deps"
       include: "scope"

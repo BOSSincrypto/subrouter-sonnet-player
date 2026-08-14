@@ -14,6 +14,12 @@
     <color name="player_progress">#FFFFFF</color>
     <color name="player_secondary_text">#B3FFFFFF</color>
     
+    <!-- UI colors -->
+    <color name="overlay_dark">#CC000000</color>
+    <color name="accent">#FF2196F3</color>
+    <color name="text_primary_dark">#FFFFFF</color>
+    <color name="error">#FFFF5252</color>
+    
     <!-- Launcher icon -->
     <color name="ic_launcher_background">#000000</color>
 </resources>

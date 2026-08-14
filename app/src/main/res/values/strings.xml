@@ -4,4 +4,7 @@
     <string name="video_loading">Loading video...</string>
     <string name="video_error">Error playing video</string>
     <string name="permission_denied">Storage permission is required to play videos</string>
+    <string name="player_loading">Loading...</string>
+    <string name="player_error_title">Playback Error</string>
+    <string name="player_retry">Retry</string>
 </resources>

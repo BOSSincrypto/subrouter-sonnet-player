@@ -18,6 +18,7 @@
     <color name="player_icon">#FFFFFF</color>
     <color name="player_progress">#FFFFFF</color>
     <color name="player_secondary_text">#B3FFFFFF</color>
+    <color name="player_controls_tint">#FFFFFF</color>
     
     <!-- UI colors -->
     <color name="overlay_dark">#CC000000</color>
@@ -26,6 +27,4 @@
     
     <!-- Launcher icon -->
     <color name="ic_launcher_background">#000000</color>
-</resources>
-    <color name="player_controls_tint">#FFFFFF</color>
 </resources>

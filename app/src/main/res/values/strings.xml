@@ -15,5 +15,8 @@
     <string name="cd_skip_next">Skip to next</string>
     <string name="cd_rewind">Rewind</string>
     <string name="cd_fast_forward">Fast forward</string>
+    <string name="cd_forward">Forward</string>
     <string name="cd_settings">Settings</string>
+    <string name="speed_1x">1x</string>
+    <string name="lock_orientation">Lock orientation</string>
 </resources>

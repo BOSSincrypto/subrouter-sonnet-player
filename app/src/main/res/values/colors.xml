@@ -17,6 +17,7 @@
     <color name="player_text">#FFFFFF</color>
     <color name="player_icon">#FFFFFF</color>
     <color name="player_progress">#FFFFFF</color>
+    <color name="player_progress_background">#4DFFFFFF</color>
     <color name="player_secondary_text">#B3FFFFFF</color>
     <color name="player_controls_tint">#FFFFFF</color>
     

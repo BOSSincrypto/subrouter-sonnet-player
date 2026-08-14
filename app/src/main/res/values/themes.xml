@@ -13,3 +13,13 @@
         <item name="android:windowContentOverlay">@null</item>
     </style>
 </resources>
+
+    <!-- Player Activity Theme -->
+    <style name="Theme.SonnetPlayer.Player" parent="Theme.SonnetPlayer">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>
